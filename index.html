@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar + Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+   
+    <div class="sidebar">
+      <h2>STEP UP<br><small>ACADEMY</small></h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#" id="openFormBtn">Registration</a></li>
+        <li><a href="#">Enrollments</a></li>
+        <li><a href="#">Course Creation</a></li>
+      </ul>
+    </div>
+ 
+   
+    <div class="main-content">
+      <h1>Welcome</h1>
+    </div>
+ 
+    <div class="modal" id="formModal">
+      <div class="modal-content">
+        <span class="close" id="closeForm">&times;</span>
+        <h2>Add Student Details</h2>
+        <form>
+          <input type="text" placeholder="Course Name" />
+          <input type="text" placeholder="Batch Name" />
+          <input type="text" placeholder="Student Name" />
+          <input type="text" placeholder="Mobile Number" />
+          <input type="text" placeholder="Parent's Mobile Number" />
+          <input type="email" placeholder="Email ID" />
+          <input type="text" placeholder="Address" />
+          <textarea placeholder="Followup Message"></textarea>
+          <button type="submit">Add Student</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
