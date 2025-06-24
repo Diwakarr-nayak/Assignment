@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+ 
+.container {
+  display: flex;
+}
+ 
+.sidebar {
+  width: 220px;
+  background-color: #003333;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+}
+ 
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+ 
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+ 
+.sidebar ul li a {
+  color: white;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
+ 
+.sidebar ul li a:hover {
+  background-color: #004d4d;
+}
+ 
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+ 
+/* Modal form styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+ 
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 8px;
+}
+ 
+.modal-content form input,
+.modal-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+}
+ 
+.modal-content form button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+ 
+.modal-content .close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
